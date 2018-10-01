@@ -1,0 +1,599 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+html{
+	min-height:100%;
+	width:100%;
+	position: relative;
+}
+
+.container{
+	max-width:1250px;
+	position:relative;
+	text-align:center;
+	margin:0 auto;
+}
+
+header{
+	position:relative;
+	margin-bottom:20px;
+	padding:20px;
+}
+.phone{
+	padding:20px;
+}
+.phone img{
+	width:25px;
+	position:absolute;
+	right:160px;
+}
+
+.phone p{
+	position:absolute;
+	right:40px;
+	margin-top:5px;
+	font-family: 'Lusitana', serif;
+	font-size:20px;
+	color:#bf9b30;/*gold*/
+}
+.logo{
+	text-align:center;
+}
+
+.logo img{
+	width:250px;
+}
+
+nav{
+	display: inline-block;
+	width: 100%;
+}
+nav li{
+	list-style: none;
+}
+
+nav li a{
+	color:#bf9b30;/*gold*/
+}
+ul#nav{
+	display: inline-block;
+	width: 100%;
+	font-family: 'Lusitana', serif;
+	font-size:20px;
+	color:#bf9b30;
+
+}
+ul#nav>li{
+	float: left;
+	width: 16%;
+	position: relative;
+	display:inline-block;
+	margin-top:20px;
+}
+
+ul#nav>li a:hover{
+	border-bottom:2px solid #C0C0C0;/*silver*/
+}
+ul#nav .dd{
+	display: inline-block;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 25px;
+	z-index: 9;
+	display: none;
+	font-size:16px;
+	background-color:white;
+	padding: 8px 15px;
+}
+ul#nav .dd a{
+	color:#16507a;
+	margin:6px;
+	font-family: 'Lusitana', serif;
+}
+
+ul#nav .dd a:hover{
+	transition: all ease 0.5s;
+}
+ul#nav>li:hover .dd{
+	display: block;
+}
+
+.topNav{
+	display:inline-block;
+}
+
+/*------------footer--------------*/
+footer{
+	background-color:#000;/*black*/
+	height:125px;
+	bottom:0;
+	left:0;
+	width:1250px;
+	margin:0 auto;
+}
+.companyName h2{
+	color:#ffffff;/*white*/
+	font-family: 'Lusitana', serif;
+	font-size:20px;
+	padding:10px;
+	position:absolute;
+	left:24px;
+}
+
+#titleText{
+	position:relative;
+}
+.emailSubscribeText h3{
+	color:#ffffff;/*white*/
+	position:absolute;
+	right:57px;
+	font-family: 'Lusitana', serif;
+	font-size:13px;
+	top:10px;
+}
+.emailSubscribeText input{
+	position:absolute;
+	top:30px;
+	right:136px;
+}
+
+.emailSubscribeText input[type=submit]{
+	position:absolute;
+	top:30px;
+	right:40px;
+}
+.inputfile{
+	font-size:15px;
+}
+.subscribebtn{
+	border:none;
+	padding:3px 12px;
+	background-color:#bf9b30;/*gold*/
+	color:#ffffff;/*white*/
+	margin-right:5px;
+}
+.subscribebtn:hover{
+	background-color:white;
+	color:#bf9b30;
+}
+
+#subFooter{
+	position:relative;
+}
+.subFooter{
+	position:absolute;
+	top:70px;
+	color:#808080;/*grey*/;
+}
+.subFooter p{
+	float:left;
+	margin-left:27px;
+	color:#ffffff;/*white*/
+}
+.socialIconLinks img{
+	width:20px;
+	position:relative;	
+	top:40px;
+	left:10px;
+	margin-left:20px;
+}
+
+#copyright{
+	position:relative;
+}
+
+.copyright p{
+	color:#ffffff;/*white*/;
+	position:absolute;
+	bottom:-90px;
+	margin-left:27px;
+}
+
+/*------------heroImage---------------*/
+.heroImage img{
+	width:100%;
+}
+
+.heroImage{
+	z-index: 0;
+	max-width:1250px;
+}
+
+/*------------service--------------*/
+
+#service {
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	text-align:center;
+	width:1100px;
+	margin:0 auto;
+	margin-bottom:20px;
+}
+
+#service img{
+	box-shadow:40px -10px #d8ba6c;/*darkgold*/
+	max-width:370px;
+	margin-top:20px;	
+	margin-right:50px;
+}
+
+.serviceText h1{
+	font-family: 'Mrs Saint Delafield', cursive;
+	font-size:40px;
+	margin-top:20px;
+}
+.serviceText p{
+	font-family:'Lusitana', serif;
+	width:80%;
+	margin:0 auto;
+	text-align:left;
+	font-size:18px;
+	margin-bottom:10px;
+}
+
+.btn{
+	padding:8px 15px;
+	background-color:#a67c00;/*gold*/
+	color:#ffffff;/*white*/
+	margin-right:328px;
+	font-family:'Lusitana', serif;
+}
+.btn:hover{
+	background-color:white;
+	color:#bf9b30;  
+}
+
+/*---------media query-------------*/
+@media only screen and (max-width: 450px){
+	.phone p {
+		font-size:16px;
+		left:45px;
+	}
+	.phone img{
+		width:20px;
+		bottom:20px;
+		right:130px;
+	}
+	ul#nav{
+		font-size:13px;
+	}
+    
+    #service{
+    	display:grid;
+    	grid-template-columns: 1fr;
+    	width:200px;
+    	margin:0 auto;
+    }
+    #service img{
+    	display:none;
+
+    }
+    .serviceText h1{
+    	font-size:30px;
+    	text-align:left;
+    }
+    .serviceText p{
+    	font-size:16px;
+    	width:80%;
+    	margin-right:160px;
+    }
+    .btn{
+    	padding:5px 10px;
+    	margin-right:140px;
+    }
+    footer{
+    	width:450px;
+    	height:180px;
+    	margin-top:20px;
+    }
+    .subFooter p{
+    	float:none;
+    }
+    .copyright p{
+    	bottom:-125px;
+    }
+    .emailSubscribeText h3{
+    	display:none;
+    }
+    .emailSubscribeText input{
+    	display:none;
+    }
+}
+
+/*-------------endMediaQeueryforthehomepage---------------*/
+/*--------------wedding&banqute---------------------------*/
+
+.wedding{
+	grid-template-columns: 1fr 1fr;
+	display:grid;
+	padding:20px;
+	grid-column-gap:20px;
+}
+.wedding img{
+    width:600px;
+	height:300px;
+}
+.wedding p{
+	width:90%;
+	text-align:left;
+	line-height:25px;
+	font-family: 'Lusitana', serif;
+	font-size:18px;
+	margin-top:10px;
+}
+.wedding h1{
+	text-align:left;
+	margin-top:15px;
+	font-family: 'Mrs Saint Delafield', cursive;
+	font-size:40px;
+}
+span{
+	font-weight:bold;
+}
+.photo{
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 5px;
+}
+.photo img{
+	width:413px;
+	height:300px;
+}
+
+.galleryText h1{
+	font-family: 'Mrs Saint Delafield', cursive;
+	font-size:40px;
+}
+
+/*--------------menu---------------------*/
+.menu{
+	margin:0 auto;
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	margin-top:20px;
+	margin:0 auto;
+	text-align:center;
+}
+
+#menuTitle h1{
+	font-family: 'Mrs Saint Delafield', cursive;
+	text-align:center;
+	font-size:40px;
+}
+.menuText h5{
+	font-family: 'Lusitana', serif;
+	font-size:25px;
+
+}
+.menuText img{
+	width:500px;
+	height:300px;
+	margin-top:20px;
+}
+
+.menuText p{
+	width:80%;
+	margin:0 auto;
+	font-family: 'Lusitana', serif;
+	font-size:18px;
+	margin-bottom:10px;
+}
+
+.media{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+.mediaTitle h1{
+	text-align:center;
+	margin-top:20px;
+	font-family: 'Mrs Saint Delafield', cursive;
+	font-size:40px;
+}
+
+/*-----------reservation & contact--------------*/
+.reservation{
+	position:relative;
+	margin-top:20px;
+}
+
+.reservation h1{
+	position:absolute;
+	left:35%;
+	top:10%;
+	font-size:50px;
+}
+.reservation img{
+	margin-bottom:-330px;
+}
+form{
+	position:absolute;
+	width:400px;
+	bottom:300px;
+	left:30px;
+	background-color:rgb(192,192,192, 0.8);
+	padding:20px 100px;	
+}
+
+#fullName, #email, #weddingdate, label, .sbtBtn, #guestsSize, #weddinghall, #city, textarea {
+	display:block;
+	width:200px;
+	margin:0 auto;
+	text-align:left;
+	margin-top:5px;
+	font-family: 'Lusitana', serif;
+}
+.sbtBtn{
+	background-color:#a67c00;/*gold*/
+	border:none;
+	font-size:20px;
+	padding:5px 12px;
+	color:white;
+	border-radius:3px;
+}
+
+.stnBtn:hover{
+	background-color:white;
+	color:#a67c00;
+
+}
+
+.contact{
+	position:relative;
+	margin-top:20px;
+}
+
+.contact h1{
+	position:absolute;
+	left:43%;
+	top:10%;
+	font-size:50px;
+	font-family: 'Lusitana', serif;
+	color:white;
+}
+.contact img{
+	margin-bottom:-270px;
+	max-width:1250px;
+}
+
+/*--media query for Wedding, Banquet, contact, reservation, gallery, media---*/
+@media only screen and (max-width: 450px){
+	.wedding{
+		grid-template-columns: 1fr;
+		display:grid;
+	}
+    .wedding h1{
+    	font-size:30px;
+    }
+	.wedding img{
+		max-width:350px;
+	}
+
+	.wedding p{
+		max-width:350px;
+		font-size:16px;
+	}
+	.photo{
+		grid-template-columns: 1fr;
+		display:grid;
+	}
+	.photo img{
+		max-width:350px;
+	}
+    .galleryText h1{
+    	font-size:30px;
+    	text-align:left;
+    	margin-left:20px;
+    }
+    .menu{
+    	grid-template-columns: 1fr;
+    	display: grid
+    }
+    .menuText img{
+    	max-width:350px;
+    }
+
+    .media{
+    	display:grid;
+    	grid-template-columns: 1fr;
+    }
+    iframe{
+    	max-width:300px;
+    }
+     
+     .reservation img{
+        width:400px;
+        margin-bottom:-300px;
+        height:450px;
+    
+    }
+    .reservation h1{
+    	top:10px;
+    	left:20px;
+    	font-size:20px;
+     	left:20px;
+     	color:#ffffff;/*white*/
+     	padding:5px 8px;
+     	background-color:rgb(192,192,192, 0.8);
+     	margin-left:10px;
+    }
+    form{
+        max-width:200px;
+        background-color:none;
+        bottom:100px;
+
+          }
+    #fullName, #email, #weddingdate, label, #sbtBtn, #guestsSize, #weddinghall, #city, textarea{
+    	margin-top:1px;
+
+    }
+     .contact img{
+     	width:350px;
+     	height:450px;
+     }
+
+     .contact h1{
+     	font-size:20px;
+     	left:20px;
+     	color:#ffffff;/*white*/
+     	padding:5px 8px;
+     	background-color:rgb(192,192,192, 0.8);
+     	margin-left:10px;
+
+     }
+}
+
+/*-----------------thankyoupage-----------------*/
+      .thanksPage{
+      	text-align:center;
+      	
+      }
+
+      .thanksPage h1 {
+      	font-family: 'Lusitana', serif;
+      	font-size:50px;
+      	margin-top:50px;
+      }
+
+      .thanksPage p{
+      	font-family: 'Lusitana', serif;
+      	font-size:20px;
+      	height:450px;
+      }
+     
+   /*------------hamburger-------------*/
+      .hamburger {
+      	font-size:26px;
+      	display:none;
+      	font-size:30px;
+      	margin:0 auto;
+      	color:#a67c00;/*gold*/
+      }
+
+      #toggle{
+      	display:none;
+      }
+     
+     @media only screen and (max-width: 450px){
+     	.hamburger{
+     		display:block;
+     		cursor:pointer;
+
+     	}
+       nav{
+       	   display:none;
+       }
+
+       #toggle:checked + nav{
+       	display:block;
+       }
+     }
+
+
+    
